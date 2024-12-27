@@ -9,16 +9,16 @@ return (
         </NavLeft>
             <NavRight>
                 <NavItem>
-                    <Link to="#home" className="link">HOME</Link>
+                    <Link to="/" className="link">HOME</Link>
                 </NavItem>
                 <NavItem>
-                    <Link to="#about" className="link">ABOUT</Link>
+                    <Link to="/about" className="link">ABOUT</Link>
                 </NavItem>
                 <NavItem>
-                    <Link to="#projects" className="link">PROJECTS</Link>
+                    <Link to="/projects" className="link">PROJECTS</Link>
                 </NavItem>
                 <NavItem>
-                    <Link to="#contact" className="link">CONTACT ME</Link>
+                    <Link to="/contact" className="link">CONTACT ME</Link>
                 </NavItem>
             </NavRight>        
         </NavBar>

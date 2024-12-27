@@ -10,6 +10,8 @@ export const NavBar = styled.div`
     padding-left: 7%;
     padding-right: 10%;
     box-shadow: 0px 2px 5px #B336FF;
+    margin: 0px;
+    
 `
 
 export const NavLeft = styled.h1`

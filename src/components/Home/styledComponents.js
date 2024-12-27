@@ -2,55 +2,102 @@ import styled from "styled-components";
 
 
 export const HomeDiv = styled.div`
-    // background-color: #111827;
     display:flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    padding-left: 10%;
+    padding-left: 7%;
     padding-right: 10%;
-    height: 90vh;
-    width: 80%;
+    background-color: #000000;
+    height: 100vh;
 `
 
-export const HomeLeft = styled.div`
+export const HomeLeftImage = styled.img.attrs((props) => ({
+    src: props.src,
+}))`
+    height: 70%;
+    width: 35%;
+    boreder-radius: 100%;
+`
+
+export const HomeMiddle = styled.button.attrs((props) => ({
+    type: props.type,
+    download: props.download,
+}))`
+    background: none;
+    border: none;
+    align-self: start;
+    height: 50px;
+    cursor: pointer;
+    `
+
+export const HomeMiddleImage = styled.img.attrs((props) => ({
+    src: props.src,
+}))`
+    transform: rotate(-180deg);
+
+`
+
+export const HomeRight = styled.div`
     display:flex;
     flex-direction:column;
-    width: 50%;
+    align-items: end;
+    width: 55%;
+    text-align: right;
 `
 
-export const HomeLeftWelcome = styled.h4`
-    font-family: Roboto;
-    font-size: 24px;
-    color: #EAB308;
-
-`
 export const HomeName = styled.h1`
-    font-family: Lexend Deca;
-    font-size: 42px;
-    font-weight: bold;
+    font-family: 'BebasNeueRegular', sans-serif;
+    font-size: 250%;
+    font-weight: 900;
     color: #F3F4F6;
     margin: 0px;
 `
 
+export const Name = styled.span`
+    color: #B336FF;
+
+`
+
 export const HomePara = styled.p`
-    font-family: Lexend Deca;
-    font-size: 20px;
-    font-weight: 500;
+    font-family: 'BebasNeueRegular', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
     color: #F3F4F6;
 `
 
-export const HomeButton = styled.button`
-    background-color: #FACC15;
-    border: none;
-    border-radius: 10px;
-    width: 30%;
-    padding: 10px;
+export const SocialMedia = styled.div`
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 `
 
-export const HomeRightImage = styled.img.attrs((props) => ({
-    src: props.src,
+export const HomeButton = styled.button`
+    border-radius: 15px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: #000000;
+    font-family: 'BebasNeueRegular', sans-serif;
+    color: #ffffff;
+    font-size: 15px;
+    box-shadow: 0 0 5px 1px #B336FF;
+    cursor: pointer;
+`
+
+export const HomeAnchor = styled.a.attrs((props) => ({
+    href: props.href,
 }))`
-    height: 80%;
+    text-decoration: none;
+    margin-left: 5%;
+`
+
+export const LinksContainer = styled.ul`
+    list-style-type: none;
+    display: flex;
+    justify-content:space-between;
     width: 40%;
-    boreder-radius: 100%;
 `
