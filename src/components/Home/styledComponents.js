@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const HomeDiv = styled.div`
-    background-color: #111827;
+    // background-color: #111827;
     display:flex;
     justify-content: space-between;
     align-items: center;
