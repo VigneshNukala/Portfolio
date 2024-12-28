@@ -11,11 +11,10 @@ import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { BsTwitterX } from "react-icons/bs";
 import { IoIosMail } from "react-icons/io";
-import { FaArrowDownLong } from "react-icons/fa6";
 // import { BsFillTelephoneFill } from "react-icons/bs";
 // import { FaLocationDot } from "react-icons/fa6";
 
-import { HomeDiv, HomeLeftImage, HomeMiddle, HomeMiddleImage, HomeRight, HomeName, Name, HomePara, SocialMedia, HomeButton, HomeAnchor, LinksContainer, ArrowButton} from "./styledComponents";
+import { HomeDiv, HomeLeftImage, HomeMiddle, HomeMiddleImage, HomeRight, HomeName, Name, HomePara, SocialMedia, HomeButton, HomeAnchor, LinksContainer} from "./styledComponents";
 
 import './index.css'
 

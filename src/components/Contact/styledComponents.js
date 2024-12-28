@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import '@fontsource/league-gothic';
 import '@fontsource/league-spartan';
 
-export const AboutDiv = styled.div`
+export const ContactDiv = styled.div`
     height:90vh;
     display:flex;
     flex-direction: column;
@@ -10,7 +10,7 @@ export const AboutDiv = styled.div`
     align-items: center;
     background-color: #000000;
 `
-export const AboutHeading = styled.div`
+export const ContactHeading = styled.div`
     font-size: 500%;
     font-family: 'League Gothic';
     color: #ffffff;
@@ -18,7 +18,7 @@ export const AboutHeading = styled.div`
     letter-spacing: 0.1em;
     
     `
-export const AboutPara = styled.div`
+export const ContactPara = styled.div`
     font-size: 200%;
     font-family: League Gothic;
     color: #ffffff;
@@ -26,7 +26,7 @@ export const AboutPara = styled.div`
     letter-spacing: 0.4em;
 `
 
-export const AboutDescCon = styled.div`
+export const ContactDescCon = styled.div`
     display:flex;
     flex-direction:column;
     aligen-items: center;
@@ -37,17 +37,9 @@ export const AboutDescCon = styled.div`
     padding-top: 10%;
 `
 
-export const DescHeading = styled.h1`
+export const ContactDescHeading = styled.h1`
     font-family: 'League Spartan';
     font-size: 200%;
     color: #000000;
     font-weight: 900;
-`
-
-export const DescPara = styled.p`
-    font-family: 'League Spartan';
-    font-size: 100%;
-    color: #000000;
-    font-weight: 500;
-    line-height: 1.2em;
 `
