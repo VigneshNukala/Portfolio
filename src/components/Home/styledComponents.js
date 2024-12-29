@@ -101,3 +101,60 @@ export const LinksContainer = styled.ul`
     justify-content:space-between;
     width: 40%;
 `
+
+export const HomeBottom = styled.div`
+    display:flex;
+    flex-direction:column;
+    aligen-items: center;
+    text-align: left;
+    background-color: #ffffff;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 10%;
+    
+
+`
+
+export const HomeHeading = styled.h1`
+    font-family: 'League Spartan';
+    font-size: 200%;
+    color: #000000;
+    font-weight: 900;
+`
+
+export const HomeParagraph  = styled.p`
+    font-family: 'League Spartan';
+    font-size: 100%;
+    color: #000000;
+    font-weight: 500;
+    line-height: 1.2em;
+`
+
+export const SkillsCon = styled.ul`
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+`
+export const SkillItem = styled.li`
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 10%;
+    margin-right: 10%;
+`
+
+export const SkillIcon = styled.img.attrs(props => ({
+    src: props.src,
+}))`
+    height: 30%;
+    width: 30%;
+`
+
+export const SkillPara = styled.p`
+    font-size: 100%;
+    font-family: 'Roboto';
+    color: #000000;
+    font-weight: bold;
+`
