@@ -1,6 +1,16 @@
+//  photos import
 import mylogo from '../../data/mylogo.png'
 import lightbulb from '../../data/lightbulb.png'
 import myresume from '../../data/myresume.pdf'
+import CSS3 from '../../data/CSS3.png'
+import HTML5 from '../../data/HTML5.png'
+import JS from '../../data/JS.png'
+import NodejS from '../../data/Nodejs.png'
+import React from '../../data/React.png'
+import Sqlite from '../../data/Sqlite.png'
+import python from '../../data/python.png'
+import ecommerce from '../../data/ecommerce.jpg'
+import projectimage from '../../data/projectimage.png'
 
 import Nav from '../Nav'
 
@@ -11,15 +21,6 @@ import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { BsTwitterX } from "react-icons/bs";
 import { IoIosMail } from "react-icons/io";
-// import { BsFillTelephoneFill } from "react-icons/bs";
-// import { FaLocationDot } from "react-icons/fa6";
-import { FaReact } from "react-icons/fa";
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
-import { FaJs } from "react-icons/fa6";
-import { FaNodeJs } from "react-icons/fa";
-import { SiSqlite } from "react-icons/si";
-import { FaPython } from "react-icons/fa";
 
 import { HomeDiv, 
     HomeLeftImage, 
@@ -40,21 +41,24 @@ import { HomeDiv,
     SkillItem,
     SkillIcon,
     SkillPara,
+    ProjectsCon,
+    ProjectsItem,
+    ProjectsImage,
 } from "./styledComponents";
 
 import './index.css'
 
 const skillsList = [
-    {id: 1, name: 'HTML5', src: 'https://miro.medium.com/v2/resize:fit:1400/format:webp/1*Tpa-mII4icyuzl-iDk1WDw.png'},
-    {id: 2, name: 'CSS', src: <FaCss3Alt />},
-    {id: 3, name: 'JavaScript', src: <FaJs />},
-    {id: 4, name: 'ReactJS', src: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg'},
-    {id: 5, name: 'NodeJS', src: <FaNodeJs />},
-    {id: 6, name: 'SQLite', src: <SiSqlite />},
-    {id: 7, name: 'PYTHON', src: <FaPython />},
-    {id: 7, name: 'PYTHON', src: <FaReact />},
-    {id: 7, name: 'PYTHON', src: <FaReact />},
-    {id: 7, name: 'PYTHON', src: <FaReact />},
+    {id: 1, name: 'HTML5', src: HTML5},
+    {id: 2, name: 'CSS', src: CSS3},
+    {id: 3, name: 'JavaScript', src: JS},
+    {id: 4, name: 'ReactJS', src: React},
+    {id: 5, name: 'NodeJS', src: NodejS},
+    {id: 6, name: 'SQLite', src: Sqlite},
+    {id: 7, name: 'PYTHON', src: python},
+    {id: 7, name: 'PYTHON', src: python},
+    {id: 7, name: 'PYTHON', src: python},
+    {id: 7, name: 'PYTHON', src: python},
 ]
 
 
@@ -92,12 +96,23 @@ const Home = () => {
             <SkillsCon>
             {skillsList.map(each => (
                 <SkillItem>
-                    <SkillIcon src={each.src} alt={each.name} />
+                    <SkillIcon key={each.id} src={each.src} alt={each.name} />
                     <SkillPara>{each.name}</SkillPara>
                 </SkillItem>
-                
             ))}
             </SkillsCon>
+            <ProjectsCon>
+                <ProjectsItem imageUrl={projectimage}>
+                
+                </ProjectsItem>
+                <ProjectsItem imageUrl={projectimage}>
+                
+                </ProjectsItem>
+                <ProjectsItem imageUrl={projectimage}>
+                
+                </ProjectsItem>
+            </ProjectsCon>
+            
         </HomeBottom>
         </>
     )

@@ -110,7 +110,7 @@ export const HomeBottom = styled.div`
     background-color: #ffffff;
     padding-left: 25%;
     padding-right: 25%;
-    padding-top: 10%;
+    padding-top: 8%;
     
 
 `
@@ -148,13 +148,30 @@ export const SkillItem = styled.li`
 export const SkillIcon = styled.img.attrs(props => ({
     src: props.src,
 }))`
-    height: 30%;
-    width: 30%;
+    height: 40%;
+    width: 40%;
 `
 
 export const SkillPara = styled.p`
     font-size: 100%;
-    font-family: 'Roboto';
     color: #000000;
     font-weight: bold;
+    margin: 10px;
+    font-family: 'Roboto';
 `
+
+export const ProjectsCon = styled.ul`
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+`
+export const ProjectsItem = styled.li`
+    background-image: url(${(props) => props.imageUrl});
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
+`
+
