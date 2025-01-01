@@ -11,6 +11,10 @@ export const NavBar = styled.div`
     padding-right: 10%;
     box-shadow: 0px 2px 5px #B336FF;
     margin: 0px;
+
+    @media (max-width: 786px){
+        justify-content: center;
+    }    
     
 `
 
@@ -27,6 +31,9 @@ export const NavRight = styled.ul`
     display: flex;
     justify-content: space-between;
     width: 50%;
+    @media (max-width: 786px){
+        display: none;
+    }
 `
 
 export const NavItem = styled.li`

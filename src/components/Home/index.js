@@ -18,6 +18,7 @@ import iotlogo from '../../data/iotlogo.jpg'
 import dsalogo from '../../data/dsalogo.jpg'
 
 import Nav from '../Nav'
+import Footer from '../Footer'
 
 import { IoCloudDownloadOutline } from "react-icons/io5";
 import { BsLinkedin } from "react-icons/bs";
@@ -97,7 +98,7 @@ const Home = () => {
         </HomeDiv>
         <HomeBottom>
             <HomeHeading>About me</HomeHeading>
-            <HomeParagraph>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla</HomeParagraph>
+            <HomeParagraph>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</HomeParagraph>
             <HomeHeading>My Skills</HomeHeading>
             <SkillsCon>
             {skillsList.map(each => (
@@ -126,6 +127,7 @@ const Home = () => {
                 <Link to="/contact" className="bottom-link"><FaArrowRightLong className='arrow'/>Contact me</Link>
             </ButtonCon>
         </HomeBottom>
+        <Footer />
         </>
     )
 }

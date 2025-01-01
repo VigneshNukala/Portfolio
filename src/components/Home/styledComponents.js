@@ -8,7 +8,13 @@ export const HomeDiv = styled.div`
     padding-left: 7%;
     padding-right: 10%;
     background-color: #000000;
-    height: 100vh;
+    @media (min-width: 786px){
+        height: 100vh;
+    }
+    @media (max-width: 786px){
+        flex-direction: column;
+        justify-content: space-between;
+    }
 `
 
 export const HomeLeftImage = styled.img.attrs((props) => ({
@@ -17,6 +23,9 @@ export const HomeLeftImage = styled.img.attrs((props) => ({
     height: 70%;
     width: 35%;
     boreder-radius: 100%;
+    @media (max-width: 786px){
+        width: 60%;
+    }
 `
 
 export const HomeMiddle = styled.button.attrs((props) => ({
@@ -28,13 +37,16 @@ export const HomeMiddle = styled.button.attrs((props) => ({
     align-self: start;
     height: 50px;
     cursor: pointer;
-    `
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+`
 
 export const HomeMiddleImage = styled.img.attrs((props) => ({
     src: props.src,
 }))`
     transform: rotate(-180deg);
-
 `
 
 export const HomeRight = styled.div`
@@ -43,6 +55,11 @@ export const HomeRight = styled.div`
     align-items: end;
     width: 55%;
     text-align: right;
+    @media (max-width: 786px){
+        text-align: center;
+        justify-content: space-between;
+        margin-top: 10%;
+    }
 `
 
 export const HomeName = styled.h1`
@@ -51,6 +68,9 @@ export const HomeName = styled.h1`
     font-weight: 900;
     color: #F3F4F6;
     margin: 0px;
+    @media (max-width: 786px){
+        font-size: 150%;
+    }
 `
 
 export const Name = styled.span`
@@ -70,6 +90,10 @@ export const SocialMedia = styled.div`
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    @media (max-width: 786px){
+        justify-content: center;
+        width: 100%;
+    }
 `
 
 export const HomeButton = styled.button`
@@ -118,9 +142,13 @@ export const HomeHeading = styled.h1`
     font-weight: 900;
     padding-left: 25%;
     padding-right: 25%;
-`
-
-export const HomeParagraph  = styled.p`
+    @media (max-width: 786px){
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    `
+    
+    export const HomeParagraph  = styled.p`
     font-family: 'League Spartan';
     font-size: 100%;
     color: #000000;
@@ -128,45 +156,60 @@ export const HomeParagraph  = styled.p`
     line-height: 1.2em;
     padding-left: 25%;
     padding-right: 25%;
-`
-
-export const SkillsCon = styled.ul`
+    @media (max-width: 786px){
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    `
+    
+    export const SkillsCon = styled.ul`
     list-style-type: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding-left: 25%;
     padding-right: 25%;
-`
-export const SkillItem = styled.li`
+    @media (max-width: 786px){
+        padding-left: 15%;
+        padding-right: 15%;
+        flex-direction: column;
+        height: 200px;
+    }
+    `
+    export const SkillItem = styled.li`
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 10%;
     margin-right: 10%;
-`
-
-export const SkillIcon = styled.img.attrs(props => ({
-    src: props.src,
-}))`
+    `
+    
+    export const SkillIcon = styled.img.attrs(props => ({
+        src: props.src,
+    }))`
     height: 40%;
     width: 40%;
-`
-
-export const SkillPara = styled.p`
+    `
+    
+    export const SkillPara = styled.p`
     font-size: 100%;
     color: #000000;
     font-weight: bold;
     margin: 10px;
     font-family: 'Roboto';
-`
-
-export const ProjectsCon = styled.ul`
+    `
+    
+    export const ProjectsCon = styled.ul`
     list-style-type: none;
     display: flex;
     flex-direction: row;
     padding-left: 10%;
     padding-right: 10%;
+    @media (max-width: 786px){
+        padding-left: 4%;
+        padding-right: 4%;
+        flex-direction: column;
+    }
 `
 export const ProjectsItem = styled.li`
     padding: 1%;
@@ -176,6 +219,9 @@ export const ProjectsItem = styled.li`
     background-size: cover;
     margin: 2%;
     border-radius: 5px;
+    @media (max-width: 786px){
+        width: 85vw;
+    }
 `
 
 export const ProjectHeading = styled.h1`
@@ -196,4 +242,8 @@ export const ButtonCon = styled.div`
     display:flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 786px){
+        flex-direction: column;
+        margin-bottom: 10%;
+    }
 `
