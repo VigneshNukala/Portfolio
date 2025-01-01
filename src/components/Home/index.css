@@ -2,6 +2,19 @@
     text-decoration: none;  
 }
 
+.bottom-link{
+    margin: 1%;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: #D9D9D9;
+    color: #000000;
+    font-weight: 500;
+    border: none;
+    text-decoration: none;
+    font-size: 100%;
+}
+
 .icon{
     height: 20px;
     width: 30px;
@@ -14,4 +27,8 @@
     height: 20px;
     width: 25px;
     margin-top: 18%;
+}
+
+.arrow{
+    margin-right: 10px;
 }

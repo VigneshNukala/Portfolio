@@ -108,11 +108,7 @@ export const HomeBottom = styled.div`
     aligen-items: center;
     text-align: left;
     background-color: #ffffff;
-    padding-left: 25%;
-    padding-right: 25%;
     padding-top: 8%;
-    
-
 `
 
 export const HomeHeading = styled.h1`
@@ -120,6 +116,8 @@ export const HomeHeading = styled.h1`
     font-size: 200%;
     color: #000000;
     font-weight: 900;
+    padding-left: 25%;
+    padding-right: 25%;
 `
 
 export const HomeParagraph  = styled.p`
@@ -128,6 +126,8 @@ export const HomeParagraph  = styled.p`
     color: #000000;
     font-weight: 500;
     line-height: 1.2em;
+    padding-left: 25%;
+    padding-right: 25%;
 `
 
 export const SkillsCon = styled.ul`
@@ -135,7 +135,8 @@ export const SkillsCon = styled.ul`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
+    padding-left: 25%;
+    padding-right: 25%;
 `
 export const SkillItem = styled.li`
     display: flex;
@@ -164,14 +165,35 @@ export const ProjectsCon = styled.ul`
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-
+    padding-left: 10%;
+    padding-right: 10%;
 `
 export const ProjectsItem = styled.li`
+    padding: 1%;
     background-image: url(${(props) => props.imageUrl});
-    height: 100px;
+    height: 60vh;
+    width: 100vw;
     background-size: cover;
-    background-repeat: no-repeat;
-    width: 300px;
+    margin: 2%;
+    border-radius: 5px;
 `
 
+export const ProjectHeading = styled.h1`
+    font-family: 'League Spartan';
+    font-size: 200%;
+    color: #ffffff;
+    font-weight: 900;
+`
+
+export const ProjectPara = styled.h1`
+    font-family: 'League Spartan';
+    font-size: 100%;
+    color: #ffffff;
+    font-weight: 900;
+`
+
+export const ButtonCon = styled.div`
+    display:flex;
+    justify-content: center;
+    align-items: center;
+`

@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom"
+
 //  photos import
 import mylogo from '../../data/mylogo.png'
 import lightbulb from '../../data/lightbulb.png'
@@ -10,17 +12,19 @@ import React from '../../data/React.png'
 import Sqlite from '../../data/Sqlite.png'
 import python from '../../data/python.png'
 import ecommerce from '../../data/ecommerce.jpg'
-import projectimage from '../../data/projectimage.png'
+import nxtwatch from '../../data/nxtwatch.jpg'
+import smartpot from '../../data/smartpot.jpg'
+import iotlogo from '../../data/iotlogo.jpg'
+import dsalogo from '../../data/dsalogo.jpg'
 
 import Nav from '../Nav'
-
-import {Link} from 'react-router-dom'
 
 import { IoCloudDownloadOutline } from "react-icons/io5";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { BsTwitterX } from "react-icons/bs";
 import { IoIosMail } from "react-icons/io";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 import { HomeDiv, 
     HomeLeftImage, 
@@ -43,7 +47,9 @@ import { HomeDiv,
     SkillPara,
     ProjectsCon,
     ProjectsItem,
-    ProjectsImage,
+    ProjectHeading,
+    ProjectPara,
+    ButtonCon,
 } from "./styledComponents";
 
 import './index.css'
@@ -56,8 +62,8 @@ const skillsList = [
     {id: 5, name: 'NodeJS', src: NodejS},
     {id: 6, name: 'SQLite', src: Sqlite},
     {id: 7, name: 'PYTHON', src: python},
-    {id: 7, name: 'PYTHON', src: python},
-    {id: 7, name: 'PYTHON', src: python},
+    {id: 8, name: 'DSA', src: dsalogo},
+    {id: 9, name: 'IOT', src: iotlogo},
     {id: 7, name: 'PYTHON', src: python},
 ]
 
@@ -102,17 +108,23 @@ const Home = () => {
             ))}
             </SkillsCon>
             <ProjectsCon>
-                <ProjectsItem imageUrl={projectimage}>
-                
+                <ProjectsItem imageUrl={ecommerce}>
+                    <ProjectHeading>E-Commerce</ProjectHeading>
+                    <ProjectPara>ReactJS, NodeJS, SQLite</ProjectPara>
                 </ProjectsItem>
-                <ProjectsItem imageUrl={projectimage}>
-                
+                <ProjectsItem imageUrl={nxtwatch}>
+                    <ProjectHeading>You Watch</ProjectHeading>
+                    <ProjectPara>ReactJS, NodeJS, ExpressJS, SQLite</ProjectPara>
                 </ProjectsItem>
-                <ProjectsItem imageUrl={projectimage}>
-                
+                <ProjectsItem imageUrl={smartpot}>
+                    <ProjectHeading>Slef Watering Smart Pot</ProjectHeading>
+                    <ProjectPara>IOT, Aruino, C Language, Senosrs</ProjectPara>
                 </ProjectsItem>
             </ProjectsCon>
-            
+            <ButtonCon>
+                <Link to="/projects" className="bottom-link"><FaArrowRightLong className='arrow'/>All Projects</Link>
+                <Link to="/contact" className="bottom-link"><FaArrowRightLong className='arrow'/>Contact me</Link>
+            </ButtonCon>
         </HomeBottom>
         </>
     )

@@ -5,13 +5,12 @@ const Projects = (pros) => {
         <>
             <Nav />
             <ContactDiv>
-                            <ContactHeading>CONTACT ME</ContactHeading>
-                            <ContactPara>SAY HELLO TO ME</ContactPara>
-                        </ContactDiv>
-                        <ContactDescCon>
-                            <ContactDescHeading>Contact Me</ContactDescHeading>
-                            
-                        </ContactDescCon>
+                <ContactHeading>CONTACT ME</ContactHeading>
+                <ContactPara>SAY HELLO TO ME</ContactPara>
+            </ContactDiv>
+            <ContactDescCon>
+                <ContactDescHeading>Contact Me</ContactDescHeading>                    
+            </ContactDescCon>
         </>
     )
 }
