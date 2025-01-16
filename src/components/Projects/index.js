@@ -1,4 +1,5 @@
 import Nav from '../Nav'
+import Footer from '../Footer'
 import {ContactDiv, ContactHeading, ContactPara, ContactDescCon, ContactDescHeading} from './styledComponents'
 const Projects = (pros) => {
     return (
@@ -11,6 +12,7 @@ const Projects = (pros) => {
             <ContactDescCon>
                 <ContactDescHeading>Contact Me</ContactDescHeading>                    
             </ContactDescCon>
+            <Footer />
         </>
     )
 }

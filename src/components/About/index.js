@@ -1,4 +1,5 @@
 import Nav from '../Nav'
+import Footer from '../Footer'
 
 import {AboutDiv, AboutHeading, AboutPara, AboutDescCon, DescHeading, DescPara} from './styledComponents'
 const About = (pros) => {
@@ -33,6 +34,7 @@ const About = (pros) => {
                     Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
                 </DescPara>
             </AboutDescCon>
+            <Footer />
         </>
     )
 }
