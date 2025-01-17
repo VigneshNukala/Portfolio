@@ -130,6 +130,7 @@ const Home = () => {
             </ProjectsCon>
             <ButtonCon>
                 <Link to="/projects" className="bottom-link"><FaArrowRightLong className='arrow'/>All Projects</Link>
+                <Link to="/about" className="bottom-link"><FaArrowRightLong className='arrow'/>About Me</Link>
                 <Link to="/contact" className="bottom-link"><FaArrowRightLong className='arrow'/>Contact me</Link>
             </ButtonCon>
         </HomeBottom>
