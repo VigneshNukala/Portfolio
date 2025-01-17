@@ -98,7 +98,7 @@ const Home = () => {
         </HomeDiv>
         <HomeBottom>
             <HomeHeading>About me</HomeHeading>
-            <HomeParagraph>Detail-oriented software developer with expertise in JavaScript, TypeScript, and web development frameworks like React. Proficient in building scalable, efficient, and user-friendly applications. Experienced in working with RESTful APIs, databases, and front-end optimization. Passionate about solving complex problems with simple and elegant solutions.</HomeParagraph>
+            <HomeParagraph>Detail-oriented software developer with expertise in HTML, CSS, Bootstrap, JavaScript, and web development frameworks like React. Proficient in building scalable, efficient, and user-friendly applications. Experienced in working with RESTful APIs, databases, and front-end optimization. Passionate about solving complex problems with simple and elegant solutions.</HomeParagraph>
             <HomeHeading>My Skills</HomeHeading>
             <SkillsCon>
             {skillsList.map(each => (
@@ -109,17 +109,23 @@ const Home = () => {
             ))}
             </SkillsCon>
             <ProjectsCon>
-                <ProjectsItem imageUrl={ecommerce}>
-                    <ProjectHeading>E-Commerce</ProjectHeading>
-                    <ProjectPara>ReactJS, NodeJS, SQLite</ProjectPara>
-                </ProjectsItem>
-                <ProjectsItem imageUrl={nxtwatch}>
-                    <ProjectHeading>You Watch</ProjectHeading>
-                    <ProjectPara>ReactJS, NodeJS, ExpressJS, SQLite</ProjectPara>
-                </ProjectsItem>
-                <ProjectsItem imageUrl={smartpot}>
+                <ProjectsItem imageUrl={smartpot} href='' target="_blank" rel="noopener noreferrer">
                     <ProjectHeading>Slef Watering Smart Pot</ProjectHeading>
                     <ProjectPara>IOT, Aruino, C Language, Senosrs</ProjectPara>
+                </ProjectsItem>
+                <ProjectsItem imageUrl={ecommerce} href='https://shoppyease.ccbp.tech/login' target="_blank" rel="noopener noreferrer">
+                    <ProjectHeading>E-Commerce</ProjectHeading>
+                    <ProjectPara>ReactJS, NodeJS, SQLite</ProjectPara>
+                    <br />
+                    <ProjectPara>Username: rahul</ProjectPara>
+                    <ProjectPara>password: rahul@2021</ProjectPara>
+                </ProjectsItem>
+                <ProjectsItem imageUrl={nxtwatch} href='https://youwatchweb.ccbp.tech/' target="_blank" rel="noopener noreferrer">
+                    <ProjectHeading>You Watch</ProjectHeading>
+                    <ProjectPara>ReactJS, NodeJS, ExpressJS, SQLite</ProjectPara>
+                    <br />
+                    <ProjectPara>Username: rahul</ProjectPara>
+                    <ProjectPara>password: rahul@2021</ProjectPara>
                 </ProjectsItem>
             </ProjectsCon>
             <ButtonCon>

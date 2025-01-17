@@ -34,14 +34,13 @@ const Projects = (pros) => {
             <ContactDescCon>
 
             <ProjectsCon>
-                    <ProjectsItem imageUrl={foodmunch} href="https://foodmunch12345.ccbp.tech/" target="_blank" rel="noopener noreferrer">
-                        <ProjectHeading>Food Munch</ProjectHeading>
-                        <ProjectPara>HTML, CSS, JavaScript, Bootstrap</ProjectPara>
-                    </ProjectsItem>
+                <ProjectsItem imageUrl={foodmunch} href="https://foodmunch12345.ccbp.tech/" target="_blank" rel="noopener noreferrer">
+                    <ProjectHeading>Food Munch</ProjectHeading>
+                    <ProjectPara>HTML, CSS, JavaScript, Bootstrap</ProjectPara>
+                </ProjectsItem>
                 <ProjectsItem imageUrl={twitterapi} href='https://github.com/VigneshNukala/Twitter-API' target="_blank" rel="noopener noreferrer">
                     <ProjectHeading>Twitter API</ProjectHeading>
                     <ProjectPara>NodeJS, ExpressJS, SQLite</ProjectPara>
-                    
                 </ProjectsItem>
                 <ProjectsItem imageUrl={ecommerce} href='https://shoppyease.ccbp.tech/login' target="_blank" rel="noopener noreferrer">
                     <ProjectHeading>E-Commerce</ProjectHeading>

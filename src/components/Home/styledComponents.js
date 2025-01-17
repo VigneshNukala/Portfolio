@@ -219,14 +219,15 @@ export const HomeHeading = styled.h1`
         flex-direction: column;
     }
 `
-export const ProjectsItem = styled.li`
+export const ProjectsItem = styled.a`
     padding: 1%;
     background-image: url(${(props) => props.imageUrl});
     height: 60vh;
-    width: 100vw;
+    width: 20vw;
     background-size: cover;
     margin: 2%;
     border-radius: 5px;
+    text-decoration: none;
     @media (max-width: 786px){
         width: 85vw;
     }

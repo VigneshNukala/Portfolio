@@ -5,9 +5,8 @@ export const FooterDiv = styled.div `
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 3%;
-    padding-bottom: 2%;
-
+    padding-top: 1%;
+    padding-bottom: 1%;
     @media (max-width: 786px){
         flex-direction: column;
     }
