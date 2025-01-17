@@ -19,6 +19,9 @@ export const FooterLeft = styled.h1`
     font-size: 200%;
     font-weight: 900;
     color: #FFFFFF;
+    @media (max-width: 786px){
+        font-size: 150%;
+    }
 
 `
 
@@ -26,6 +29,7 @@ export const FooterRight = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
+
 `
 
 export const FooterMiddle = styled.div`
@@ -42,6 +46,9 @@ export const FooterPara = styled.h1`
     font-size: 100%;
     font-weight: 900;
     color: #FFFFFF;
+    @media (max-width: 786px){
+        font-size: 70%;
+    }
     
 `
 

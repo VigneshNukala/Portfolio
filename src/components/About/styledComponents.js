@@ -16,6 +16,9 @@ export const AboutHeading = styled.div`
     color: #ffffff;
     font-weight: 500;
     letter-spacing: 0.1em;
+    @media (max-width: 786px){
+        font-size: 400%;
+    }
     
     `
 export const AboutPara = styled.div`
@@ -24,6 +27,9 @@ export const AboutPara = styled.div`
     color: #ffffff;
     font-weight: 500;
     letter-spacing: 0.4em;
+    @media (max-width: 786px){
+        font-size: 100%;
+    }
 `
 
 export const AboutDescCon = styled.div`

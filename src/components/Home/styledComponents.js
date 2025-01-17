@@ -25,6 +25,7 @@ export const HomeLeftImage = styled.img.attrs((props) => ({
     boreder-radius: 100%;
     @media (max-width: 786px){
         width: 60%;
+        margin-top: 10%;
     }
 `
 
@@ -59,6 +60,7 @@ export const HomeRight = styled.div`
         text-align: center;
         justify-content: space-between;
         margin-top: 10%;
+        width: 100%;
     }
 `
 
@@ -70,6 +72,7 @@ export const HomeName = styled.h1`
     margin: 0px;
     @media (max-width: 786px){
         font-size: 150%;
+        margin-bottom: 10%;
     }
 `
 
@@ -83,6 +86,10 @@ export const HomePara = styled.p`
     font-size: 14px;
     font-weight: 700;
     color: #F3F4F6;
+    @media (max-width: 786px){
+        font-size: 12px;
+        margin-bottom: 10%;
+    }
 `
 
 export const SocialMedia = styled.div`
@@ -93,6 +100,7 @@ export const SocialMedia = styled.div`
     @media (max-width: 786px){
         justify-content: center;
         width: 100%;
+        margin-bottom: 10%;
     }
 `
 

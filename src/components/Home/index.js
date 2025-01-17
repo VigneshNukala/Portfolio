@@ -3,7 +3,7 @@ import {Link} from "react-router-dom"
 //  photos import
 import mylogo from '../../data/mylogo.png'
 import lightbulb from '../../data/lightbulb.png'
-import myresume from '../../data/myresume.pdf'
+import VIGNESHNUKALA from '../../data/VIGNESHNUKALA.pdf'
 import CSS3 from '../../data/CSS3.png'
 import HTML5 from '../../data/HTML5.png'
 import JS from '../../data/JS.png'
@@ -85,7 +85,7 @@ const Home = () => {
                     </HomePara>
                 <SocialMedia>
                     <HomeButton>
-                        RESUME<HomeAnchor href={myresume} download="resume" ><IoCloudDownloadOutline className='download'/></HomeAnchor>
+                        RESUME<HomeAnchor href={VIGNESHNUKALA} download="VIGNESHNUKALA" ><IoCloudDownloadOutline className='download'/></HomeAnchor>
                     </HomeButton>
                     <LinksContainer>
                         <Link to="https://www.linkedin.com/in/vigneshnukala/" className='link'><BsLinkedin className='icon'/></Link>
@@ -98,7 +98,7 @@ const Home = () => {
         </HomeDiv>
         <HomeBottom>
             <HomeHeading>About me</HomeHeading>
-            <HomeParagraph>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</HomeParagraph>
+            <HomeParagraph>Detail-oriented software developer with expertise in JavaScript, TypeScript, and web development frameworks like React. Proficient in building scalable, efficient, and user-friendly applications. Experienced in working with RESTful APIs, databases, and front-end optimization. Passionate about solving complex problems with simple and elegant solutions.</HomeParagraph>
             <HomeHeading>My Skills</HomeHeading>
             <SkillsCon>
             {skillsList.map(each => (
