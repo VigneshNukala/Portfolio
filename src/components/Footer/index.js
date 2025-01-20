@@ -15,7 +15,7 @@ const Footer = () => {
             <FooterLeft>VIGNESH NUKALA</FooterLeft>
             <FooterRight>
                 <FooterMiddle>
-                    <FooterPara>vigneshnukala@gmail.com</FooterPara>
+                    <FooterPara>vigneshnukala1@gmail.com</FooterPara>
                     <FooterPara>+91 8247416510</FooterPara>
                 </FooterMiddle>
                 <FooterImage src={vn} />
